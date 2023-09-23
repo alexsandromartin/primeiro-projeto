@@ -26,16 +26,16 @@ tela.tracer(0)
 
 #Adicionando Imagens(shape)
 
-tela.addshape('nave1.gif')
-tela.addshape('meteoro1.gif')
-tela.addshape('galax1.gif')
-tela.addshape('explosao.gif')
-tela.addshape('bonus.gif')
+tela.addshape('assents\wnave.gif')
+tela.addshape('assents\meteoro1.gif')
+tela.addshape('assents\galax1.gif')
+tela.addshape('assents\explosao.gif')
+tela.addshape('assents\eBonus.gif')
 
 #Cenario1
 
 cenario1 = turtle.Turtle()
-cenario1.shape('galax1.gif')
+cenario1.shape('assents\galax1.gif')
 cenario1.speed(0)
 cenario1.right(90)
 cenario1.up()
@@ -43,7 +43,7 @@ cenario1.up()
 #Cenario2
 
 cenario2 = turtle.Turtle()
-cenario2.shape('galax1.gif')
+cenario2.shape('assents\galax1.gif')
 cenario2.speed(0)
 cenario2.right(90)
 cenario2.sety(800)
@@ -52,7 +52,7 @@ cenario2.up()
 #Personagem1
 
 nave = turtle.Turtle()
-nave.shape('nave1.gif')
+nave.shape('assents\wnave.gif')
 nave.speed(2)
 nave.up()
 nave.goto(0, -300)
@@ -91,7 +91,7 @@ titulo.hideturtle()
 
 asteroide = turtle.Turtle()
 asteroide.speed(2)
-asteroide.shape('meteoro1.gif')
+asteroide.shape('assents\meteoro1.gif')
 asteroide.up()
 asteroide.goto(random.randint(-250, 250), 460)
 velocidade = 8
@@ -100,7 +100,7 @@ velocidade = 8
 
 bonus = turtle.Turtle()
 bonus.speed(0)
-bonus.shape('bonus.gif')
+bonus.shape('assents\eBonus.gif')
 bonus.up()
 bonus.goto(random.randint(-250, 250), 960)
 velocidade = 5
@@ -145,9 +145,9 @@ def colinave():
     if distanciax <= 80 and distanciax >= -80 and distanciay <= 80 and distanciay >= -80:
         partida = 0
         i = True
-        nave.shape('explosao.gif') 
+        nave.shape('assents\explosao.gif') 
         tela.update()
-        tela.ontimer(nave.shape('nave1.gif'), 500)  
+        tela.ontimer(nave.shape('assents\wnave.gif'), 500)  
         titulo.write('APERTE SPACE PARA COMEÇAR' ,font=('Italic', 24, 'bold'))
         while i: #Quando colidir, o asteroide e a estrela irao subir para o inicio da tela numa velocidade
             asteroide.sety(asteroide.ycor() + v + 10 )
@@ -172,9 +172,9 @@ def borda():
         else:
             nave.setx(-190)    
         i = True
-        nave.shape('explosao.gif') #Quando ela colidir com a borda aparece o sprite de explosao
+        nave.shape('assents\explosao.gif') #Quando ela colidir com a borda aparece o sprite de explosao
         tela.update()
-        tela.ontimer(nave.shape('nave1.gif'), 500)   
+        tela.ontimer(nave.shape('assents\wnave1.gif'), 500)   
         titulo.write('APERTE SPACE PARA COMEÇAR' ,font=('Italic', 24, 'bold'))  
         while i:                                                   
             asteroide.sety(asteroide.ycor() + v + 10 )           
