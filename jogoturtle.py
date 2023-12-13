@@ -167,14 +167,14 @@ def borda():
     global partida, v, pontuacao, combustivel                                               
     if nave.xcor() >= 210 or nave.xcor() <= -210:   #Minha nave vai se distanciar um pouco da borda, para ela nao ficar travada na borda                    
         partida = 0
+        i = True
         if nave.xcor() > 0:     
             nave.setx(190)
         else:
             nave.setx(-190)    
-        i = True
         nave.shape('assents\explosao.gif') #Quando ela colidir com a borda aparece o sprite de explosao
         tela.update()
-        tela.ontimer(nave.shape('assents\wnave1.gif'), 500)   
+        tela.ontimer(nave.shape('assents\wnave.gif'), 500)   
         titulo.write('APERTE SPACE PARA COMEÇAR' ,font=('Italic', 24, 'bold'))  
         while i:                                                   
             asteroide.sety(asteroide.ycor() + v + 10 )           
