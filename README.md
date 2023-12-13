@@ -29,19 +29,19 @@ Warriors Galatics é um jogo espacial simples onde você controla uma nave em um
     sobrevivência.
 ## Desenvolvimento Técnico
 ### Tecnologias Utilizadas
-Linguagem de Programação: Python
-Biblioteca Gráfica: Turtle
-Manipulação de Imagens: GIF
+-Linguagem de Programação: Python
+-Biblioteca Gráfica: Turtle
+-Manipulação de Imagens: GIF
 
 ### Estrutura do Código
-Utilização de Funções para modularizar o código.
-Controle de movimentação, colisões e atualizações de tela.
+-Utilização de Funções para modularizar o código.
+-Controle de movimentação, colisões e atualizações de tela.
 
 ### Personalizações Adicionais
-Cenários em movimentos para uma experiência imersiva.
-Animações de explosão ao colidir com asteroides e bordas da tela.
+-Cenários em movimentos para uma experiência imersiva.
+-Animações de explosão ao colidir com asteroides e bordas da tela.
 
 ## Próximos Passos
-Adicionar mais níveis de dificuldade
-Introduzir inimigos adicionais.
-Melhorar a lógica de geração de asteróides.
+-Adicionar mais níveis de dificuldade
+-Introduzir inimigos adicionais.
+-Melhorar a lógica de geração de asteróides.
