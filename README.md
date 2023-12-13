@@ -2,6 +2,8 @@ Desenvolvedor: Alexsandro Martins Alves
 Curso: Ciências da computação
 Semestre:2022.2
 
+# Warriors Galatics
+
 ## Descrição do Jogo
 Warriors Galatics é um jogo espacial simples onde você controla uma nave em um ambiente cheio de desafios. Sua missão é desviar dos asteroides, coletar bônus e acumular pontos.
 
